@@ -31,15 +31,27 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="manage.py" />
+    <Compile Include="PIngueandoWebApp\admin.py" />
+    <Compile Include="PIngueandoWebApp\apps.py" />
+    <Compile Include="PIngueandoWebApp\migrations\__init__.py" />
+    <Compile Include="PIngueandoWebApp\models.py" />
+    <Compile Include="PIngueandoWebApp\tests.py" />
+    <Compile Include="PIngueandoWebApp\views.py" />
+    <Compile Include="PIngueandoWebApp\__init__.py" />
     <Compile Include="PingueandoWeb\__init__.py" />
     <Compile Include="PingueandoWeb\settings.py" />
     <Compile Include="PingueandoWeb\urls.py" />
     <Compile Include="PingueandoWeb\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="PIngueandoWebApp\templates\PIngueandoWebApp\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="PIngueandoWebApp\" />
+    <Folder Include="PIngueandoWebApp\migrations\" />
+    <Folder Include="PIngueandoWebApp\templates\" />
+    <Folder Include="PIngueandoWebApp\templates\PIngueandoWebApp\" />
     <Folder Include="PingueandoWeb\" />
   </ItemGroup>
   <ItemGroup>
