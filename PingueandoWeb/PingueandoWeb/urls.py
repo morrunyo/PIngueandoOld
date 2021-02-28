@@ -19,8 +19,17 @@ Including another URLconf
 # Uncomment next two lines to enable admin:
 #from django.contrib import admin
 #from django.urls import path
+from PIngueandoWebApp.scaffolding import PinguerCrudManager
+from PIngueandoWebApp.scaffolding import PinguerEventCrudManager
+
+pinguer_crud = PinguerCrudManager()
+pinguerevent_crud = PinguerEventCrudManager()
 
 urlpatterns = [
     # Uncomment the next line to enable the admin:
-    #path('admin/', admin.site.urls)
+    #path('admin/', admin.site.urls),
+    #path('', pinguer_crud.get_list_class_view().as_view)
 ]
+
+urlpatterns += pinguer_crud.get_url_patterns()
+urlpatterns += pinguerevent_crud.get_url_patterns()

@@ -35,6 +35,9 @@
     <Compile Include="PIngueandoWebApp\apps.py" />
     <Compile Include="PIngueandoWebApp\migrations\__init__.py" />
     <Compile Include="PIngueandoWebApp\models.py" />
+    <Compile Include="PIngueandoWebApp\scaffolding.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="PIngueandoWebApp\tests.py" />
     <Compile Include="PIngueandoWebApp\views.py" />
     <Compile Include="PIngueandoWebApp\__init__.py" />
