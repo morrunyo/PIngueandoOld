@@ -38,6 +38,10 @@
     <Compile Include="PIngueandoWebApp\scaffolding.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="PIngueandoWebApp\templatetags\getattribute.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PIngueandoWebApp\templatetags\__init__.py" />
     <Compile Include="PIngueandoWebApp\tests.py" />
     <Compile Include="PIngueandoWebApp\views.py" />
     <Compile Include="PIngueandoWebApp\__init__.py" />
@@ -47,12 +51,14 @@
     <Compile Include="PingueandoWeb\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="PIngueandoWebApp\templates\PIngueandoWebApp\list.html" />
     <Content Include="PIngueandoWebApp\templates\PIngueandoWebApp\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="PIngueandoWebApp\" />
     <Folder Include="PIngueandoWebApp\migrations\" />
+    <Folder Include="PIngueandoWebApp\templatetags\" />
     <Folder Include="PIngueandoWebApp\templates\" />
     <Folder Include="PIngueandoWebApp\templates\PIngueandoWebApp\" />
     <Folder Include="PingueandoWeb\" />

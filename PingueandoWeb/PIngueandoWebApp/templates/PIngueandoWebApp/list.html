@@ -1,0 +1,25 @@
+<html>
+<head><title></title></head>
+
+<body>
+    <table>
+        <tr>
+            {% for field in datasourceModel %}
+            <th>
+                {{ field.name }}
+            </th>
+            {% endfor %}
+        </tr>
+        {% load getattribute %}
+        {% for item in datasource %}
+        <tr>
+            {% for field in datasourceModel %}
+            <td>
+                {{ item|getattribute:"name" }}
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -4,6 +4,7 @@ from django.db import models
 class Pinguer(models.Model):
     name = models.CharField(max_length=128)
     ipAddress = models.CharField(max_length=128)
+    active = models.BooleanField(default=False)
 
 class PinguerEvent(models.Model):
     EVENT_TYPE = [
@@ -12,4 +13,4 @@ class PinguerEvent(models.Model):
     ]
     pinguer=models.ForeignKey(Pinguer, on_delete=models.CASCADE )
     event_type = models.IntegerField(choices=EVENT_TYPE)
-    event_date = models.DateField()
+    event_date = models.DateTimeField()

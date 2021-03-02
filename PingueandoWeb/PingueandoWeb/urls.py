@@ -17,19 +17,15 @@ Including another URLconf
 """
 
 # Uncomment next two lines to enable admin:
-#from django.contrib import admin
-#from django.urls import path
-from PIngueandoWebApp.scaffolding import PinguerCrudManager
-from PIngueandoWebApp.scaffolding import PinguerEventCrudManager
-
-pinguer_crud = PinguerCrudManager()
-pinguerevent_crud = PinguerEventCrudManager()
+from django.contrib import admin
+from django.urls import path
+from django.conf.urls import include, url
+import PIngueandoWebApp.views
 
 urlpatterns = [
     # Uncomment the next line to enable the admin:
-    #path('admin/', admin.site.urls),
-    #path('', pinguer_crud.get_list_class_view().as_view)
+    path('admin/', admin.site.urls),
+
+    url(r'^$', PIngueandoWebApp.views.pinguers_list, name='index'),
 ]
 
-urlpatterns += pinguer_crud.get_url_patterns()
-urlpatterns += pinguerevent_crud.get_url_patterns()
