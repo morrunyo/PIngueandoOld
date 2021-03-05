@@ -27,5 +27,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     url(r'^$', PIngueandoWebApp.views.pinguers_list, name='index'),
+    path('pinguers/<int:pinguer_id>/changeStatus',PIngueandoWebApp.views.pinguers_changeStatus, name='changeStatus'),
 ]
 

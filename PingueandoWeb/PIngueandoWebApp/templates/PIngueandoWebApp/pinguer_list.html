@@ -8,7 +8,7 @@
         </tr>
         {% for item in datasource %}
         <tr>
-            <td>{{ item.id }}</td><td>{{ item.name }}</td><td>{{ item.ipAddress }}</td><td>{{ item.active }}</td>
+            <td>{{ item.id }}</td><td>{{ item.name }}</td><td>{{ item.ipAddress }}</td><td><a href="pinguers/{{ item.id }}/changeStatus">{{ item.active }}</a></td>
         </tr>
         {% endfor %}
     </table>
