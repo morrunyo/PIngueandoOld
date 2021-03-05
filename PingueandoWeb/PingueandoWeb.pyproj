@@ -51,6 +51,7 @@
     <Compile Include="PingueandoWeb\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="PIngueandoWebApp\templates\PIngueandoWebApp\pinguer_list.html" />
     <Content Include="PIngueandoWebApp\templates\PIngueandoWebApp\list.html" />
     <Content Include="PIngueandoWebApp\templates\PIngueandoWebApp\index.html" />
     <Content Include="requirements.txt" />

@@ -5,12 +5,8 @@ from PIngueandoWebApp import models
 def pinguers_list(request):
     return render(
         request,
-        "PIngueandoWebApp/list.html",
-        {
-            'datasourceModel': models.Pinguer._meta.get_fields(),   
+        "PIngueandoWebApp/pinguer_list.html",
+        { 
             'datasource': models.Pinguer.objects.all()
-
-
-
         }
     )

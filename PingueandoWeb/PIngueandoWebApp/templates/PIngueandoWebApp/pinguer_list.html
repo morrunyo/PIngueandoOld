@@ -1,0 +1,16 @@
+<html>
+<head><title></title></head>
+
+<body>
+    <table>
+        <tr>
+            <th>Id</th><th>Name</th><th>IP Address</th><th>Active</th><th></th>
+        </tr>
+        {% for item in datasource %}
+        <tr>
+            <td>{{ item.id }}</td><td>{{ item.name }}</td><td>{{ item.ipAddress }}</td><td>{{ item.active }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
